@@ -1,1 +1,1 @@
-﻿# [Deploy:](https://pogosstuido.github.io/rsschool-landing-page/)
+﻿# [Deploy:](https://pogosstuido.github.io/rsschool-landing-page/dist/)
