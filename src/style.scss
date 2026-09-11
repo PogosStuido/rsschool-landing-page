@@ -1,0 +1,10 @@
+//basic
+@use '../node_modules/modern-normalize/modern-normalize.css';
+@use './assets/scss/basic/basic.scss';
+
+//components
+@use 'assets/scss/components/burger';
+
+//sections
+@use './assets/scss/sections/header.scss';
+@use './assets/scss/sections/hero.scss';

@@ -1,0 +1,55 @@
+@use '../mixins/links-and-buttons' as *;
+@use '../mixins/typography' as *;
+@use '../basic/variables.scss' as *;
+
+.hero {
+  padding-top: 20px;
+
+  &__background-image {
+    width: 100%;
+    min-height: 552px;
+    border-radius: 40px;
+
+    //background image
+    background-image: url("../../img/img-hero.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__wrapper {
+    padding: 60px 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__header {
+    @include heading-1;
+    color: $text-light;
+
+    &_accent {
+      @include heading-1_accent;
+      color: $text-accent;
+    }
+  }
+
+  &__info {
+    @include medium;
+    color: $text-light;
+  }
+
+  &__button {
+    @include button-primary;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    &__wrapper {
+      padding: 100px 0 100px 60px;
+      max-width: 580px;
+    }
+  }
+}
