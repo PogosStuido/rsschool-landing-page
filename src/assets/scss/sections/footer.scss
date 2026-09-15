@@ -1,0 +1,131 @@
+﻿@use '../mixins/links-and-buttons' as *;
+@use '../mixins/typography' as *;
+@use '../basic/variables.scss' as *;
+
+.footer {
+  padding: 100px 0 40px;
+
+  &__wrapper {
+    padding: 60px 16px;
+    background-color: $border-inverse;
+    border-radius: 40px;
+  }
+
+  &__title {
+    @include heading-2;
+    color: $text-inverse;
+
+    span {
+      @include heading-2_accent;
+      color: $text-accent;
+    }
+
+    &_h3 {
+      @include heading-3;
+      margin-top: 40px;
+      color: $text-inverse;
+    }
+  }
+
+  &__social {
+    display: flex;
+    margin-top: 40px;
+    gap: 12px;
+
+    &_item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      border: 1px solid $border-primary;
+      border-radius: 100px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover, &:active {
+        background-color: $background-page;
+
+        path {
+          stroke: $background-container;
+        }
+      }
+    }
+  }
+
+  &__work {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-info {
+      @include link-and-button;
+      color: $text-inverse;
+      font-style: normal;
+      text-decoration: none;
+    }
+
+    .address, .work-time, .telephone {
+      display: flex;
+      gap: 8px;
+
+      &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .address::before {
+      background-image: url("/public/icons/contacts/pin-alt.svg");
+    }
+
+    .telephone::before {
+      background-image: url("/public/icons/contacts/phone.svg");
+    }
+
+    .work-time::before {
+      background-image: url("/public/icons/contacts/clock.svg");
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    &__wrapper {
+      padding: 100px 60px;
+    }
+
+    &__title {
+
+      &_h3 {
+        margin-top: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+
+    &__wrapper {
+      padding: 100px;
+      display: flex;
+      flex-direction: row;
+      gap: 100px;
+      .first-part {
+        flex: 1;
+      }
+      .second-part {
+        flex: 1;
+      }
+    }
+
+    &__title {
+
+      &_h3 {
+        margin-top: 33px;
+      }
+    }
+  }
+}

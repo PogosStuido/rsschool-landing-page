@@ -27,7 +27,7 @@
 
   &__header {
     @include heading-1;
-    color: $text-light;
+    color: $text-inverse;
 
     &_accent {
       @include heading-1_accent;
@@ -37,7 +37,7 @@
 
   &__info {
     @include medium;
-    color: $text-light;
+    color: $text-inverse;
   }
 
   &__button {

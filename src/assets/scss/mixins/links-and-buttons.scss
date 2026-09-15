@@ -6,12 +6,12 @@
   @include link-and-button;
   display: flex;
   flex-direction: column;
-  color: $text-dark;
+  color: $text-primary;
   &::after {
     content: '';
     width: 100%;
     height: 2px;
-    background-color: $text-dark;
+    background-color: $text-primary;
 
     transform: scaleX(0);
     transform-origin: left;
@@ -33,8 +33,8 @@
 @mixin button-primary {
   width: 200px;
   height: 64px;
-  background-color: $background-body;
-  color: $text-dark;
+  background-color: $background-page;
+  color: $text-primary;
 
   border: none;
   border-radius: 100px;
