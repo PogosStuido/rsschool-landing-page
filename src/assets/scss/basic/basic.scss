@@ -40,9 +40,8 @@ html {
 
 body {
   padding-top: 20px;
-  background-color: $background-page;
+  background-color: var(--background-page);
 }
-
 
 .container {
   margin: 0 auto;

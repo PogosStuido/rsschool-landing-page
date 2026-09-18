@@ -7,23 +7,23 @@
 
   &__wrapper {
     padding: 60px 16px;
-    background-color: $border-inverse;
+    background-color: var(--border-inverse);
     border-radius: 40px;
   }
 
   &__title {
     @include heading-2;
-    color: $text-inverse;
+    color: var(--text-inverse);
 
     span {
       @include heading-2_accent;
-      color: $text-accent;
+      color: var(--text-accent);
     }
 
     &_h3 {
       @include heading-3;
       margin-top: 40px;
-      color: $text-inverse;
+      color: var(--text-inverse);
     }
   }
 
@@ -38,15 +38,15 @@
       align-items: center;
       width: 60px;
       height: 60px;
-      border: 1px solid $border-primary;
+      border: 1px solid var(--border-primary);
       border-radius: 100px;
       transition: all 0.2s ease-in-out;
 
       &:hover, &:active {
-        background-color: $background-page;
+        background-color: var(--background-page);
 
         path {
-          stroke: $background-container;
+          stroke: var(--background-container);
         }
       }
     }
@@ -60,7 +60,7 @@
 
     &-info {
       @include link-and-button;
-      color: $text-inverse;
+      color: var(--text-inverse);
       font-style: normal;
       text-decoration: none;
     }

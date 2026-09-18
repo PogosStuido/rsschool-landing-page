@@ -27,17 +27,17 @@
 
   &__header {
     @include heading-1;
-    color: $text-inverse;
+    color: var(--text-inverse);
 
     &_accent {
       @include heading-1_accent;
-      color: $text-accent;
+      color: var(--text-accent);
     }
   }
 
   &__info {
     @include medium;
-    color: $text-inverse;
+    color: var(--text-inverse);
   }
 
   &__button {

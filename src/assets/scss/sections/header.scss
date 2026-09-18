@@ -12,6 +12,41 @@
   &__nav {
     display: none;
   }
+  //I made it for 1440px I need to change it to mobile first
+  &__right-elements {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
+
+  &__theme {
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    //temp
+    width: 88px;
+    height: 44px;
+    border: 1px solid var(--border-primary);
+    border-radius: 100px;
+
+    &_light, &_dark {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+    }
+    &_light {
+      background-color: var(--text-accent);
+      border-radius: 100px;
+    }
+  }
+
+  //I made it for 1440px I need to change it to mobile first
 
   &__menu {
     display: none;
