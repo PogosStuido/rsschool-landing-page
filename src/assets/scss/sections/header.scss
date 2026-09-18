@@ -2,16 +2,29 @@
 @use '../mixins/typography' as *;
 @use '../basic/variables.scss' as *;
 
+
 .header {
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
 
+
+  }
+  &__logo-icon {
+    path {
+      fill: var(--text-primary);
+    }
+
+    path.circle {
+      fill: var(--text-accent);
+    }
+
+  }
   &__nav {
     display: none;
   }
+
   //I made it for 1440px I need to change it to mobile first
   &__right-elements {
     display: flex;
@@ -39,10 +52,18 @@
       align-items: center;
       width: 36px;
       height: 36px;
+
     }
+
     &_light {
       background-color: var(--text-accent);
       border-radius: 100px;
+    }
+
+    &_dark {
+      path {
+        fill: var(--text-primary);
+      }
     }
   }
 
@@ -50,7 +71,14 @@
 
   &__menu {
     display: none;
+
+    &__icon {
+      path {
+        stroke: var(--text-primary);
+      }
+    }
   }
+
 }
 
 @media screen and (min-width: 1440px) {
