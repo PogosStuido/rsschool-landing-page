@@ -3,7 +3,7 @@
   localStorage.setItem('theme', theme);
 }
 
-const savedTheme = localStorage.getItem('theme') || 'ligth';
+const savedTheme = localStorage.getItem('theme') || 'light';
 setTheme(savedTheme);
 
 document.addEventListener('click', (event) => {

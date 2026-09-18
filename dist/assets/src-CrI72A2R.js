@@ -291,7 +291,7 @@ function setTheme(theme) {
 	document.documentElement.setAttribute("data-theme", theme);
 	localStorage.setItem("theme", theme);
 }
-setTheme(localStorage.getItem("theme") || "ligth");
+setTheme(localStorage.getItem("theme") || "light");
 document.addEventListener("click", (event) => {
 	const lightBtn = event.target.closest("#light");
 	const darkBtn = event.target.closest("#dark");
@@ -300,4 +300,4 @@ document.addEventListener("click", (event) => {
 });
 //#endregion
 
-//# sourceMappingURL=src-CE6hAf6B.js.map
+//# sourceMappingURL=src-CrI72A2R.js.map

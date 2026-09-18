@@ -1,0 +1,52 @@
+﻿@use '../mixins/links-and-buttons' as *;
+@use '../mixins/typography' as *;
+@use '../basic/variables.scss' as *;
+
+.about {
+  padding-top: 100px;
+
+  &__text {
+    @include heading-2;
+    color: var(--text-primary);
+
+    span {
+      font-style: italic;
+      color: var(--text-accent);
+    }
+  }
+
+  &__wrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &-img,
+    &-img_hide {
+      object-fit: cover;
+      border-radius: 20px;
+
+    }
+    &-img {
+      height: 590px;
+    }
+    &-img_hide {
+      display: none;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    &__wrapper {
+      flex-wrap: wrap;
+      height: 1060px;
+
+      &-img_hide {
+        display: block;
+        height: 430px;
+      }
+    }
+  }
+}
