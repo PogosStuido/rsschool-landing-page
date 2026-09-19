@@ -1,0 +1,52 @@
+﻿@use '../mixins/links-and-buttons' as *;
+@use '../mixins/typography' as *;
+@use '../basic/variables.scss' as *;
+
+.mobile-app {
+  padding-top: 100px;
+  &__title {
+    @include heading-2;
+    color: var(--text-primary);
+
+    span {
+      @include heading-2_accent;
+      color: var(--text-accent);
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__wrapper-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__text {
+    @include medium;
+    color: var(--text-primary);
+  }
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .google-play__button{
+      @include button-google-play;
+    }
+    .app-store__button {
+      @include button-app-store;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .mobile-app {
+    &__wrapper {
+      flex-direction: row;
+      align-items: center;
+      gap: 100px;
+    }
+  }
+}

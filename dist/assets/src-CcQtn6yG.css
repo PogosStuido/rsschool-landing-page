@@ -486,6 +486,7 @@ body {
   color: var(--text-primary);
   border: none;
   border-radius: 6.25rem;
+  transition: all 0.2s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -540,6 +541,167 @@ body {
   .about__wrapper-img_hide {
     display: block;
     height: 26.875rem;
+  }
+}
+.mobile-app {
+  padding-top: 6.25rem;
+}
+.mobile-app__title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0.125rem;
+}
+@media screen and (min-width: 768px) {
+  .mobile-app__title {
+    font-size: 3.75rem;
+  }
+}
+.mobile-app__title {
+  color: var(--text-primary);
+}
+.mobile-app__title span {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0.125rem;
+}
+@media screen and (min-width: 768px) {
+  .mobile-app__title span {
+    font-size: 3.75rem;
+  }
+}
+.mobile-app__title span {
+  font-style: italic;
+  color: var(--text-accent);
+}
+.mobile-app__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.mobile-app__wrapper-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.mobile-app__text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--text-primary);
+}
+.mobile-app__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+.mobile-app__buttons .google-play__button {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 0 0.75rem 1.25rem;
+  width: 12.5rem;
+  height: 4rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  border: 0.0625rem solid var(--border-primary);
+  border-radius: 6.25rem;
+}
+.mobile-app__buttons .google-play__button .button__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+.mobile-app__buttons .google-play__button .button__text p:nth-child(1) {
+  font-size: 0.625rem;
+  font-weight: 600;
+  line-height: 140%;
+}
+.mobile-app__buttons .google-play__button .button__text p:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.01875rem;
+  color: var(--text-primary);
+}
+.mobile-app__buttons .google-play__button .button__text p:nth-child(2) a {
+  text-decoration: none;
+  color: inherit;
+}
+.mobile-app__buttons .google-play__button path {
+  fill: var(--text-primary);
+}
+.mobile-app__buttons .google-play__button {
+  transition: all 0.2s ease-in-out;
+}
+.mobile-app__buttons .google-play__button:hover {
+  background-color: var(--background-container);
+}
+.mobile-app__buttons .google-play__button:hover p:nth-child(1) {
+  color: var(--text-inverse);
+}
+.mobile-app__buttons .google-play__button:hover p:nth-child(2) {
+  color: var(--text-inverse);
+}
+.mobile-app__buttons .google-play__button:hover path {
+  fill: var(--text-inverse);
+}
+.mobile-app__buttons .app-store__button {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 0 0.75rem 1.25rem;
+  width: 12.5rem;
+  height: 4rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  border: 0.0625rem solid var(--border-primary);
+  border-radius: 6.25rem;
+}
+.mobile-app__buttons .app-store__button .button__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+.mobile-app__buttons .app-store__button .button__text p:nth-child(1) {
+  font-size: 0.625rem;
+  font-weight: 600;
+  line-height: 140%;
+}
+.mobile-app__buttons .app-store__button .button__text p:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.01875rem;
+  color: var(--text-primary);
+}
+.mobile-app__buttons .app-store__button .button__text p:nth-child(2) a {
+  text-decoration: none;
+  color: inherit;
+}
+.mobile-app__buttons .app-store__button path {
+  fill: var(--text-primary);
+}
+.mobile-app__buttons .app-store__button {
+  transition: all 0.2s ease-in-out;
+}
+.mobile-app__buttons .app-store__button:hover {
+  background-color: var(--background-container);
+}
+.mobile-app__buttons .app-store__button:hover p:nth-child(1) {
+  color: var(--text-inverse);
+}
+.mobile-app__buttons .app-store__button:hover p:nth-child(2) {
+  color: var(--text-inverse);
+}
+.mobile-app__buttons .app-store__button:hover path {
+  fill: var(--text-inverse);
+}
+
+@media screen and (min-width: 1440px) {
+  .mobile-app__wrapper {
+    flex-direction: row;
+    align-items: center;
+    gap: 6.25rem;
   }
 }
 .footer {
