@@ -32,6 +32,10 @@
 }
 
 @mixin button-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   width: 200px;
   height: 64px;
   background-color: var(--background-page);
@@ -40,8 +44,19 @@
   border: none;
   border-radius: 100px;
 
-  transition: all 0.2s ease-in-out;
+  &::after {
+    content: url("/public/icons/coffee-cup.svg");
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
 
+  &:hover {
+    &::after {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 }
 
 @mixin button-secondary {
@@ -101,7 +116,42 @@
 
 @mixin button-google-play {
   @include store-buttons;
+}
 
+@mixin tab-icon {
+  @include link-and-button;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px 8px 8px;
+  border: 1px solid var(--border-primary);
+  border-radius: 100px;
+
+  transition: all 0.2s ease-in-out;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    padding: 3px 7px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: var(--border-primary);
+    background-size: contain;
+    background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--background-container);
+    color: var(--text-inverse);
+    &::before {
+      background-color: var(--background-page);
+    }
+  }
 }
 
 @mixin button-icon-dark {
