@@ -1,6 +1,6 @@
-﻿@use '../mixins/links-and-buttons' as *;
-@use '../mixins/typography' as *;
-@use '../basic/variables.scss' as *;
+﻿@use '../../assets/scss/mixins/links-and-buttons' as *;
+@use '../../assets/scss/mixins/typography' as *;
+@use '../../assets/scss/basic/variables.scss' as *;
 
 .menu {
   padding-top: 20px;
@@ -27,13 +27,13 @@
 
     }
     .coffee:before {
-      background-image: url("../../img/menu/coffee.png");
+      background-image: url("../../assets/img/menu/coffee.png");
     }
     .tea:before {
-      background-image: url("../../img/menu/teapot.png");
+      background-image: url("../../assets/img/menu/teapot.png");
     }
     .dessert:before {
-      background-image: url("../../img/menu/cake.png");
+      background-image: url("../../assets/img/menu/cake.png");
     }
   }
 }

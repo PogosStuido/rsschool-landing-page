@@ -297,4 +297,4 @@ function renderFooter() {
 //#endregion
 export { renderHeader as n, renderFooter as t };
 
-//# sourceMappingURL=footer-pPs14GE5.js.map
+//# sourceMappingURL=footer-Ch6Okxtt.js.map
