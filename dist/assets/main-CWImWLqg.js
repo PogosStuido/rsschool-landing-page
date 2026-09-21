@@ -218,7 +218,7 @@ function renderMobileApp() {
               </svg>
 
               <div class="button__text">
-                <p>Available on</p>
+                <p>Available on the</p>
                 <p>App Store</p>
               </div>
             </a>
@@ -234,7 +234,7 @@ function renderMobileApp() {
               </svg>
 
               <div class="button__text">
-                <p>Available on the</p>
+                <p>Available on</p>
                 <p>Google Play</p>
               </div>
             </a>
@@ -263,4 +263,4 @@ function boostrap() {
 document.addEventListener("DOMContentLoaded", boostrap);
 //#endregion
 
-//# sourceMappingURL=main-BfF3TSDc.js.map
+//# sourceMappingURL=main-CWImWLqg.js.map
