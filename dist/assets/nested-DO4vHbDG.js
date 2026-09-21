@@ -1,4 +1,4 @@
-import { n as renderHeader, t as renderFooter } from "./footer-Ch6Okxtt.js";
+import { n as renderHeader, t as renderFooter } from "./footer-9oPnXCxE.js";
 //#region src/assets/img/coffee/coffee-1.jpg
 var coffee_1_default = "" + new URL("coffee-1-BYBVVpO2.jpg", import.meta.url).href;
 //#endregion
@@ -115,4 +115,4 @@ function boostrap() {
 document.addEventListener("DOMContentLoaded", boostrap);
 //#endregion
 
-//# sourceMappingURL=nested-kh-figg2.js.map
+//# sourceMappingURL=nested-DO4vHbDG.js.map

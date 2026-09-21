@@ -1,4 +1,4 @@
-import { n as renderHeader, t as renderFooter } from "./footer-Ch6Okxtt.js";
+import { n as renderHeader, t as renderFooter } from "./footer-9oPnXCxE.js";
 //#region src/assets/img/coffee-slider/coffee-slider-1.png
 var coffee_slider_1_default = "" + new URL("coffee-slider-1-BQqdf2em.png", import.meta.url).href;
 //#endregion
@@ -263,4 +263,4 @@ function boostrap() {
 document.addEventListener("DOMContentLoaded", boostrap);
 //#endregion
 
-//# sourceMappingURL=main-EHl6t5bj.js.map
+//# sourceMappingURL=main-CxY6AXRf.js.map

@@ -353,12 +353,26 @@ body {
   width: 2.25rem;
   height: 2.25rem;
 }
+.header__theme_light:hover, .header__theme_dark:hover {
+  cursor: pointer;
+}
 .header__theme_light {
   background-color: var(--text-accent);
   border-radius: 6.25rem;
 }
+.header__theme_dark {
+  transition: all 0.2s ease-in-out;
+}
 .header__theme_dark path {
   fill: var(--text-primary);
+  transition: all 0.2s ease-in-out;
+}
+.header__theme_dark:hover {
+  background-color: var(--background-container);
+  border-radius: 6.25rem;
+}
+.header__theme_dark:hover path {
+  fill: var(--text-inverse);
 }
 .header__menu {
   display: none;

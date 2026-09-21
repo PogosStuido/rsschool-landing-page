@@ -11,6 +11,7 @@
 
 
   }
+
   &__logo-icon {
     path {
       fill: var(--text-primary);
@@ -21,11 +22,11 @@
     }
 
   }
+
   &__nav {
     display: none;
   }
 
-  //I made it for 1440px I need to change it to mobile first
   &__right-elements {
     display: flex;
     flex-direction: row;
@@ -53,6 +54,9 @@
       width: 36px;
       height: 36px;
 
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     &_light {
@@ -61,13 +65,22 @@
     }
 
     &_dark {
+      transition: all 0.2s ease-in-out;
       path {
         fill: var(--text-primary);
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:hover {
+        background-color: var(--background-container);
+        border-radius: 100px;
+
+        path {
+          fill: var(--text-inverse);
+        }
       }
     }
   }
-
-  //I made it for 1440px I need to change it to mobile first
 
   &__menu {
     display: none;
