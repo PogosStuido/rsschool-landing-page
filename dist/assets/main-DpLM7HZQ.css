@@ -387,6 +387,7 @@
 }
 .mobile-app__title {
   color: var(--text-primary);
+  letter-spacing: 0.125rem;
 }
 .mobile-app__title span {
   font-size: 2rem;
@@ -525,10 +526,18 @@
   fill: var(--text-inverse);
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-app__wrapper {
+    gap: 6.25rem;
+  }
+  .mobile-app__img {
+    max-width: 39.375rem;
+    align-self: center;
+  }
+}
 @media screen and (min-width: 1440px) {
   .mobile-app__wrapper {
     flex-direction: row;
     align-items: center;
-    gap: 6.25rem;
   }
 }

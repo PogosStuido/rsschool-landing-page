@@ -7,6 +7,7 @@
   &__title {
     @include heading-2;
     color: var(--text-primary);
+    letter-spacing: 2px;
 
     span {
       @include heading-2_accent;
@@ -41,12 +42,23 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-app {
+    &__wrapper {
+      gap: 100px;
+    }
+    &__img {
+      max-width: 630px;
+      align-self: center;
+    }
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .mobile-app {
     &__wrapper {
       flex-direction: row;
       align-items: center;
-      gap: 100px;
     }
   }
 }

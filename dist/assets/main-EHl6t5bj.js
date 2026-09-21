@@ -201,7 +201,7 @@ function renderMobileApp() {
   <div class="container">
       <div class="mobile-app__wrapper">
         <div class="mobile-app__wrapper-info">
-          <h2 class="mobile-app__title"><span>Download</span> our app
+          <h2 class="mobile-app__title"><span>Download</span> our app <br>
             to start ordering
           </h2>
           <p class="mobile-app__text">Download the Resource app today and experience
@@ -263,4 +263,4 @@ function boostrap() {
 document.addEventListener("DOMContentLoaded", boostrap);
 //#endregion
 
-//# sourceMappingURL=main-BzgcFpca.js.map
+//# sourceMappingURL=main-EHl6t5bj.js.map
