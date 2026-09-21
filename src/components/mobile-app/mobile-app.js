@@ -1,4 +1,7 @@
-﻿export function renderMobileApp() {
+﻿import './mobile-app.scss';
+import mobileAppImg from '../../assets/img/mobile-screens.png'
+
+export function renderMobileApp() {
   const mobileApp = document.createElement('section');
   mobileApp.className = 'mobile-app';
   mobileApp.innerHTML = `
@@ -44,7 +47,7 @@
             </a>
           </div>
         </div>
-        <img class="mobile-app__img" src="src/assets/img/mobile-screens.png">
+        <img class="mobile-app__img" src="${mobileAppImg}" alt="mobile-app-img">
       </div>
     </div>
   `

@@ -29,11 +29,25 @@
 	}
 })();
 //#endregion
-//#region src/assets/js-modules/header.js
+//#region src/assets/js/themeSwitch.js
+function setTheme(theme) {
+	document.documentElement.setAttribute("data-theme", theme);
+	localStorage.setItem("theme", theme);
+}
+setTheme(localStorage.getItem("theme") || "light");
+document.addEventListener("click", (event) => {
+	const lightBtn = event.target.closest("#light");
+	const darkBtn = event.target.closest("#dark");
+	if (lightBtn) setTheme("light");
+	if (darkBtn) setTheme("dark");
+});
+//#endregion
+//#region src/components/header/header.js
 function renderHeader() {
-	const headerHTML = `
-<header class="header">
-  <div class="container">
+	const headerHTML = document.createElement("header");
+	headerHTML.className = "header";
+	headerHTML.innerHTML = `
+    <div class="container">
     <div class="header__wrapper">
       <div class="header__logo">
         <a href="./">
@@ -169,17 +183,15 @@ function renderHeader() {
       </div>
     </div>
   </div>
-</header>
   `;
-	const headerContainer = document.getElementById("header-container");
-	if (headerContainer) headerContainer.outerHTML = headerHTML;
+	return headerHTML;
 }
-document.addEventListener("DOMContentLoaded", renderHeader);
 //#endregion
-//#region src/assets/js-modules/footer.js
+//#region src/components/footer/footer.js
 function renderFooter() {
-	const footerHTML = `
-  <footer class="footer">
+	const footerHTML = document.createElement("footer");
+	footerHTML.className = "footer";
+	footerHTML.innerHTML = `
   <div class="container">
     <div class="footer__wrapper">
       <div class="first-part">
@@ -279,25 +291,10 @@ function renderFooter() {
       </div>
     </div>
   </div>
-</footer>
   `;
-	const footer = document.getElementById("footer-container");
-	if (footer) footer.outerHTML = footerHTML;
+	return footerHTML;
 }
-document.addEventListener("DOMContentLoaded", renderFooter);
 //#endregion
-//#region src/assets/js/themeSwitch.js
-function setTheme(theme) {
-	document.documentElement.setAttribute("data-theme", theme);
-	localStorage.setItem("theme", theme);
-}
-setTheme(localStorage.getItem("theme") || "light");
-document.addEventListener("click", (event) => {
-	const lightBtn = event.target.closest("#light");
-	const darkBtn = event.target.closest("#dark");
-	if (lightBtn) setTheme("light");
-	if (darkBtn) setTheme("dark");
-});
-//#endregion
+export { renderHeader as n, renderFooter as t };
 
-//# sourceMappingURL=src-B3IJbPj0.js.map
+//# sourceMappingURL=footer-pPs14GE5.js.map

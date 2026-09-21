@@ -1,9 +1,9 @@
-﻿import "./style.scss";
+﻿import "/src/style.scss";
 
-import './assets/js/themeSwitch.js'
+import '/src/assets/js/themeSwitch.js'
 
-import {renderHeader} from './assets/js-modules/header.js'
-import {renderFooter} from './assets/js-modules/footer.js'
+import {renderHeader} from '/src/components/header/header.js'
+import {renderFooter} from '/src/components/footer/footer.js'
 
 function boostrap() {
 

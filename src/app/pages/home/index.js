@@ -1,12 +1,12 @@
-import "./style.scss";
+import "/src/style.scss";
 
-import './assets/js/themeSwitch.js'
+import '/src/assets/js/themeSwitch.js'
 
-import {renderHeader} from './assets/js-modules/header.js'
-import {renderHero} from './assets/js-modules/hero.js'
-import {renderAbout} from './assets/js-modules/about.js'
-import {renderMobileApp} from './assets/js-modules/mobile-app.js'
-import {renderFooter} from './assets/js-modules/footer.js'
+import {renderHeader} from '/src/components/header/header.js'
+import {renderHero} from '/src/components/hero/hero.js'
+import {renderAbout} from '/src/components/about/about.js'
+import {renderMobileApp} from '/src/components/mobile-app/mobile-app.js'
+import {renderFooter} from '/src/components/footer/footer.js'
 
 function boostrap() {
 

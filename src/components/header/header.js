@@ -1,4 +1,6 @@
-﻿export function renderHeader() {
+﻿import './header.scss'
+
+export function renderHeader() {
   const headerHTML = document.createElement('header');
   headerHTML.className = 'header';
   headerHTML.innerHTML = `

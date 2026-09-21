@@ -1,4 +1,10 @@
-﻿export function renderAbout() {
+﻿import './about.scss';
+import aboutImg1 from '../../assets/img/about/about-1.jpg';
+import aboutImg2 from '../../assets/img/about/about-2.jpg';
+import aboutImg3 from '../../assets/img/about/about-3.jpg';
+import aboutImg4 from '../../assets/img/about/about-4.jpg';
+
+export function renderAbout() {
   const about = document.createElement('section');
   about.className = 'about';
 
@@ -12,7 +18,7 @@
       <div class="about__wrapper">
         <img
           class="about__wrapper-img"
-          src="./src/assets/img/about/about-1.jpg"
+          src="${aboutImg1}"
           alt="about-img-1"
           width=""
           height="590"
@@ -20,7 +26,7 @@
         >
         <img
           class="about__wrapper-img_hide"
-          src="./src/assets/img/about/about-2.jpg"
+          src="${aboutImg2}"
           alt="about-img-2"
           width=""
           height="430"
@@ -28,7 +34,7 @@
         >
         <img
           class="about__wrapper-img_hide"
-          src="./src/assets/img/about/about-3.jpg"
+          src="${aboutImg3}"
           alt="about-img-3"
           width=""
           height="430"
@@ -36,7 +42,7 @@
         >
         <img
           class="about__wrapper-img"
-          src="./src/assets/img/about/about-4.jpg"
+          src="${aboutImg4}"
           alt="about-img-4"
           width=""
           height="590"

@@ -1,3 +1,5 @@
+import './footer.scss';
+
 export function renderFooter() {
   const footerHTML = document.createElement('footer');
   footerHTML.className = 'footer';

@@ -1,6 +1,6 @@
-﻿@use '../mixins/links-and-buttons' as *;
-@use '../mixins/typography' as *;
-@use '../basic/variables.scss' as *;
+﻿@use '../../assets/scss/mixins/links-and-buttons' as *;
+@use '../../assets/scss/mixins/typography' as *;
+@use '../../assets/scss/basic/variables.scss' as *;
 
 .about {
   padding-top: 100px;

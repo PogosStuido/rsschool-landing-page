@@ -1,6 +1,6 @@
-@use '../mixins/links-and-buttons' as *;
-@use '../mixins/typography' as *;
-@use '../basic/variables.scss' as *;
+@use '../../assets/scss/mixins/links-and-buttons' as *;
+@use '../../assets/scss/mixins/typography' as *;
+@use '../../assets/scss/basic/variables.scss' as *;
 
 .hero {
   padding-top: 20px;
@@ -11,7 +11,7 @@
     border-radius: 40px;
 
     //background image
-    background-image: url("../../img/img-hero.jpg");
+    background-image: url("../../assets/img/img-hero.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

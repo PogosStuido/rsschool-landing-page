@@ -1,4 +1,4 @@
-﻿import '../../assets/scss/sections/menu.scss';
+﻿import './hero.scss';
 
 export function renderHero() {
   const hero = document.createElement('section');
