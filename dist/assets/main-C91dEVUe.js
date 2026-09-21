@@ -1,4 +1,99 @@
 import { n as renderHeader, t as renderFooter } from "./footer-pPs14GE5.js";
+//#region src/assets/img/coffee-slider/coffee-slider-1.png
+var coffee_slider_1_default = "" + new URL("coffee-slider-1-BQqdf2em.png", import.meta.url).href;
+//#endregion
+//#region src/assets/img/coffee-slider/coffee-slider-2.png
+var coffee_slider_2_default = "" + new URL("coffee-slider-2-DBCy0FiK.png", import.meta.url).href;
+//#endregion
+//#region src/assets/img/coffee-slider/coffee-slider-3.png
+var coffee_slider_3_default = "" + new URL("coffee-slider-3-WbYig0Jn.png", import.meta.url).href;
+//#endregion
+//#region src/components/slider/slider.js
+var arrowIcon = `
+    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.5 6.5H13M7 12.5L13 6.5L7 0.5" stroke="var(--text-primary)" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+`;
+function renderSlider() {
+	const slider = document.createElement("section");
+	slider.className = "slider";
+	const container = document.createElement("div");
+	container.className = "container";
+	const titleH2 = document.createElement("h2");
+	titleH2.className = "slider__title";
+	titleH2.innerHTML = `
+    Choose your <span>favorite</span> coffee
+  `;
+	const slideWrapper = document.createElement("div");
+	slideWrapper.className = "slider__wrapper";
+	const sliderViewport = document.createElement("div");
+	sliderViewport.className = "slider__viewport";
+	const sliderTrack = document.createElement("div");
+	sliderTrack.className = "slider__track";
+	sliderTrack.innerHTML = `
+    <div class="slide">
+      <img
+        src="${coffee_slider_1_default}"
+        alt=""
+        width=""
+        height=""
+        loading="lazy"
+      >
+      <div class="slide__info">
+          <h3 class="slide__info-title">S’mores Frappuccino</h3>
+          <p class="slide__info-text">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+          <h3 class="slide__info-price">$5.50</h3>
+      </div>
+    </div>
+    <div class="slide">
+      <img
+        src="${coffee_slider_2_default}"
+        alt=""
+        width=""
+        height=""
+        loading="lazy"
+      >
+       <div class="slide__info">
+          <h3 class="slide__info-title"></h3>
+          <p class="slide__info-text"></p>
+          <h3 class="slide__info-price"></h3>
+      </div>
+    </div>
+    <div class="slide">
+      <img
+        src="${coffee_slider_3_default}"
+        alt=""
+        width=""
+        height=""
+        loading="lazy"
+      >
+       <div class="slide__info">
+          <h3 class="slide__info-title"></h3>
+          <p class="slide__info-text"></p>
+          <h3 class="slide__info-price"></h3>
+      </div>
+    </div>
+  `;
+	const paddings = document.createElement("div");
+	paddings.className = "slider__pagination";
+	paddings.innerHTML = `
+    <span class="slider__pagination-elem active"></span>
+    <span class="slider__pagination-elem"></span>
+    <span class="slider__pagination-elem"></span>  
+  `;
+	const buttonPrev = document.createElement("button");
+	buttonPrev.className = "slider__button-prev";
+	buttonPrev.innerHTML = arrowIcon;
+	const buttonNext = document.createElement("button");
+	buttonNext.className = "slider__button-next";
+	buttonNext.innerHTML = arrowIcon;
+	sliderViewport.append(sliderTrack, paddings);
+	slideWrapper.append(buttonPrev, sliderViewport, buttonNext);
+	container.append(titleH2, slideWrapper);
+	slider.append(container);
+	return slider;
+}
+//#endregion
 //#region src/components/hero/hero.js
 function renderHero() {
 	const hero = document.createElement("section");
@@ -158,13 +253,14 @@ function boostrap() {
 	const mainElement = document.createElement("main");
 	mainElement.className = "main";
 	const heroElement = renderHero();
+	const sliderElement = renderSlider();
 	const aboutElement = renderAbout();
 	const mobileAppElement = renderMobileApp();
 	const footerElement = renderFooter();
-	mainElement.append(heroElement, aboutElement, mobileAppElement);
+	mainElement.append(heroElement, sliderElement, aboutElement, mobileAppElement);
 	document.body.append(headerElement, mainElement, footerElement);
 }
 document.addEventListener("DOMContentLoaded", boostrap);
 //#endregion
 
-//# sourceMappingURL=main-DUFn0iEx.js.map
+//# sourceMappingURL=main-C91dEVUe.js.map
