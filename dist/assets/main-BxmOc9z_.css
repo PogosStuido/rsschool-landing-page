@@ -229,6 +229,9 @@
   line-height: 150%;
   color: var(--text-inverse);
 }
+.hero a {
+  text-decoration: none;
+}
 .hero__button {
   display: flex;
   justify-content: center;
