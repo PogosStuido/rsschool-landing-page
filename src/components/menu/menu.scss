@@ -7,9 +7,10 @@
 
   &__title {
     @include heading-2;
+    margin: 0 auto;
+    max-width: 800px;
     color: var(--text-primary);
     text-align: center;
-
     span {
       @include heading-2_accent;
       color: var(--text-accent);

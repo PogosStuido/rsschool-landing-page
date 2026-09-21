@@ -36,6 +36,8 @@
   }
 }
 .menu__title {
+  margin: 0 auto;
+  max-width: 50rem;
   color: var(--text-primary);
   text-align: center;
 }
@@ -158,16 +160,30 @@
   border-radius: 2.5rem;
   overflow: hidden;
 }
-.coffee__wrapper .card__img {
-  max-height: 19.375rem;
+.coffee__wrapper .card__img-box {
+  width: 100%;
+  height: 19.375rem;
+  overflow: hidden;
   border-radius: 2.5rem;
+}
+.coffee__wrapper .card__img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+  transform: scale(1.1);
+}
+.coffee__wrapper .card__img:hover {
+  cursor: pointer;
+  transform: scale(1);
 }
 .coffee__wrapper .card__info {
   padding: 1.25rem;
+  height: 12.25rem;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  justify-content: space-between;
   color: var(--text-primary);
 }
 .coffee__wrapper .card__info-title, .coffee__wrapper .card__info-price {
@@ -175,4 +191,9 @@
   font-weight: 600;
   line-height: 125%;
   letter-spacing: 0.03125rem;
+}
+.coffee__wrapper .card__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
