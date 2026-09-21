@@ -1,0 +1,18 @@
+﻿@use '../../../assets/scss/mixins/links-and-buttons' as *;
+@use '../../../assets/scss/mixins/typography' as *;
+@use '../../../assets/scss/mixins/card' as *;
+@use '../../../assets/scss/basic/variables.scss' as *;
+
+.coffee__wrapper {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  //flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  .card {
+    @include card;
+  }
+}

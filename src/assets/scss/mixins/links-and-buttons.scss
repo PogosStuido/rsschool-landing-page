@@ -152,6 +152,13 @@
       background-color: var(--background-page);
     }
   }
+  &.active {
+    background-color: var(--background-container);
+    color: var(--text-inverse);
+    &::before {
+      background-color: var(--background-page);
+    }
+  }
 }
 
 @mixin button-icon-dark {

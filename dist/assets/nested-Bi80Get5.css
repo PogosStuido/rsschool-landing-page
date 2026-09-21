@@ -102,6 +102,13 @@
 .menu__category__item:hover::before {
   background-color: var(--background-page);
 }
+.menu__category__item.active {
+  background-color: var(--background-container);
+  color: var(--text-inverse);
+}
+.menu__category__item.active::before {
+  background-color: var(--background-page);
+}
 .menu__category .coffee:before {
   background-image: url("./coffee-BsFtxlwx.png");
 }
@@ -110,4 +117,62 @@
 }
 .menu__category .dessert:before {
   background-image: url("./cake-DzNzq5gM.png");
+}
+:root {
+  --text-primary: #403F3D;
+  --text-inverse: #E1D4C9;
+  --text-accent: #B0907A;
+  --background-page: #E1D4C9;
+  --background-container: #665F55;
+  --background-overlay: #403F3DCC;
+  --border-primary: #C1B6AD;
+  --border-inverse: #665F55;
+}
+
+[data-theme=dark] {
+  --text-primary: #E1D4C9;
+  --text-inverse: #E1D4C9;
+  --text-accent: #B0907A;
+  --background-page: #292826;
+  --background-container: #403F3D;
+  --background-overlay: #292826СС;
+  --border-primary: #665F55;
+  --border-inverse: #C1B6AD;
+}
+
+.coffee__wrapper {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+.coffee__wrapper .card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  width: 19.375rem;
+  height: 31.625rem;
+  border: 0.0625rem solid var(--border-primary);
+  border-radius: 2.5rem;
+  overflow: hidden;
+}
+.coffee__wrapper .card__img {
+  max-height: 19.375rem;
+  border-radius: 2.5rem;
+  object-fit: cover;
+}
+.coffee__wrapper .card__info {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  color: var(--text-primary);
+}
+.coffee__wrapper .card__info-title, .coffee__wrapper .card__info-price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0.03125rem;
 }
