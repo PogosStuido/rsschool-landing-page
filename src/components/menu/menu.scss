@@ -1,0 +1,40 @@
+﻿@use '../../assets/scss/mixins/links-and-buttons' as *;
+@use '../../assets/scss/mixins/typography' as *;
+@use '../../assets/scss/basic/variables.scss' as *;
+
+.menu {
+  padding-top: 20px;
+
+  &__title {
+    @include heading-2;
+    margin: 0 auto;
+    max-width: 800px;
+    color: var(--text-primary);
+    text-align: center;
+    span {
+      @include heading-2_accent;
+      color: var(--text-accent);
+    }
+  }
+
+  &__category {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    &__item {
+      @include tab-icon;
+    }
+
+    .coffee:before {
+      background-image: url("../../assets/img/menu/coffee.png");
+    }
+    .tea:before {
+      background-image: url("../../assets/img/menu/teapot.png");
+    }
+    .dessert:before {
+      background-image: url("../../assets/img/menu/cake.png");
+    }
+  }
+}

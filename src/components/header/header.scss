@@ -1,0 +1,124 @@
+@use '../../assets/scss/mixins/links-and-buttons' as *;
+@use '../../assets/scss/mixins/typography' as *;
+@use '../../assets/scss/basic/variables.scss' as *;
+
+
+.header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-icon {
+    path {
+      fill: var(--text-primary);
+    }
+
+    path.circle {
+      fill: var(--text-accent);
+    }
+
+  }
+
+  &__nav {
+    display: none;
+  }
+
+  &__right-elements {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
+
+  &__theme {
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    //temp
+    width: 88px;
+    height: 44px;
+    border: 1px solid var(--border-primary);
+    border-radius: 100px;
+
+    &_light, &_dark {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &_light {
+      background-color: var(--text-accent);
+      border-radius: 100px;
+    }
+
+    &_dark {
+      transition: all 0.2s ease-in-out;
+      path {
+        fill: var(--text-primary);
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:hover {
+        background-color: var(--background-container);
+        border-radius: 100px;
+
+        path {
+          fill: var(--text-inverse);
+        }
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    &__icon {
+      path {
+        stroke: var(--text-primary);
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    &__nav {
+      display: block;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+      }
+
+      &__elem {
+        @include menu-item;
+      }
+    }
+
+    .burger {
+      display: none;
+    }
+
+    &__menu {
+      @include menu-item;
+
+      &__wrapper {
+        display: flex;
+        gap: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+﻿@use '../../assets/scss/mixins/links-and-buttons' as *;
+@use '../../assets/scss/mixins/typography' as *;
+@use '../../assets/scss/basic/variables.scss' as *;
+@use 'slider__buttons' as *;
+
+.slider {
+  padding-top: 100px;
+
+  &__title {
+    @include heading-2;
+    color: var(--text-primary);
+    text-align: center;
+
+    span {
+      @include heading-2_accent;
+      color: var(--text-accent);
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__viewport {
+    margin-top: 40px;
+    max-width: 348px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    overflow: hidden;
+  }
+
+  &__track {
+    display: flex;
+
+    .slide {
+      max-width: 348px;
+      flex: 1 0 auto;
+    }
+
+    .slide__info {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      color: var(--text-primary);
+
+      &-title, &-price {
+        @include heading-3;
+      }
+      &-text {
+        @include medium;
+        text-align: center;
+      }
+    }
+  }
+  &__pagination {
+    display: flex;
+    gap: 12px;
+
+    &-elem {
+      width: 40px;
+      height: 4px;
+      background-color: var(--border-primary);
+      border-radius: 100px;
+    }
+
+    &-elem.active {
+      background-color: var(--border-inverse);
+    }
+  }
+  &__button-prev, &__button-next {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider {
+    &__wrapper {
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    &__viewport {
+      max-width: 480px;
+    }
+
+    &__track {
+
+      .slide {
+        max-width: 480px;
+      }
+    }
+    &__button-prev, &__button-next {
+      @include slider-buttons;
+    }
+    &__button-prev {
+      transform: rotate(180deg);
+    }
+  }
+}
