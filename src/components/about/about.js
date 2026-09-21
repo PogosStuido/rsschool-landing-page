@@ -16,40 +16,40 @@ export function renderAbout() {
         get some work done.
       </h2>
       <div class="about__wrapper">
-        <img
-          class="about__wrapper-img"
-          src="${aboutImg1}"
-          alt="about-img-1"
-          width=""
-          height="590"
-          loading="lazy"
-        >
-        <img
-          class="about__wrapper-img_hide"
-          src="${aboutImg2}"
-          alt="about-img-2"
-          width=""
-          height="430"
-          loading="lazy"
-        >
-        <img
-          class="about__wrapper-img_hide"
-          src="${aboutImg3}"
-          alt="about-img-3"
-          width=""
-          height="430"
-          loading="lazy"
-        >
-        <img
-          class="about__wrapper-img"
-          src="${aboutImg4}"
-          alt="about-img-4"
-          width=""
-          height="590"
-          loading="lazy"
-        >
+        <div class="about__wrapper-img-box">
+          <img
+            class="about__wrapper-img"
+            src="${aboutImg1}"
+            alt="about-img-1"
+            loading="lazy"
+          >
+        </div>
+        <div class="about__wrapper-img-box about__wrapper-img-box_hide">
+          <img
+            class="about__wrapper-img"
+            src="${aboutImg2}"
+            alt="about-img-2"
+            loading="lazy"
+          >
+        </div>
+        <div class="about__wrapper-img-box about__wrapper-img-box_hide">
+          <img
+            class="about__wrapper-img"
+            src="${aboutImg3}"
+            alt="about-img-3"
+            loading="lazy"
+          >
+        </div>
+        <div class="about__wrapper-img-box">
+          <img
+            class="about__wrapper-img"
+            src="${aboutImg4}"
+            alt="about-img-4"
+            loading="lazy"
+          >
+        </div>
       </div>
     </div>
-  `
+  `;
   return about;
 }

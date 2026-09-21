@@ -152,38 +152,38 @@ function renderAbout() {
         get some work done.
       </h2>
       <div class="about__wrapper">
-        <img
-          class="about__wrapper-img"
-          src="${about_1_default}"
-          alt="about-img-1"
-          width=""
-          height="590"
-          loading="lazy"
-        >
-        <img
-          class="about__wrapper-img_hide"
-          src="${about_2_default}"
-          alt="about-img-2"
-          width=""
-          height="430"
-          loading="lazy"
-        >
-        <img
-          class="about__wrapper-img_hide"
-          src="${about_3_default}"
-          alt="about-img-3"
-          width=""
-          height="430"
-          loading="lazy"
-        >
-        <img
-          class="about__wrapper-img"
-          src="${about_4_default}"
-          alt="about-img-4"
-          width=""
-          height="590"
-          loading="lazy"
-        >
+        <div class="about__wrapper-img-box">
+          <img
+            class="about__wrapper-img"
+            src="${about_1_default}"
+            alt="about-img-1"
+            loading="lazy"
+          >
+        </div>
+        <div class="about__wrapper-img-box about__wrapper-img-box_hide">
+          <img
+            class="about__wrapper-img"
+            src="${about_2_default}"
+            alt="about-img-2"
+            loading="lazy"
+          >
+        </div>
+        <div class="about__wrapper-img-box about__wrapper-img-box_hide">
+          <img
+            class="about__wrapper-img"
+            src="${about_3_default}"
+            alt="about-img-3"
+            loading="lazy"
+          >
+        </div>
+        <div class="about__wrapper-img-box">
+          <img
+            class="about__wrapper-img"
+            src="${about_4_default}"
+            alt="about-img-4"
+            loading="lazy"
+          >
+        </div>
       </div>
     </div>
   `;
@@ -263,4 +263,4 @@ function boostrap() {
 document.addEventListener("DOMContentLoaded", boostrap);
 //#endregion
 
-//# sourceMappingURL=main-CWImWLqg.js.map
+//# sourceMappingURL=main-XAi6BTXp.js.map
