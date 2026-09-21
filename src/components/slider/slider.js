@@ -36,7 +36,7 @@ export function renderSlider() {
     <div class="slide">
       <img
         src="${sliderImg1}"
-        alt=""
+        alt="S’mores Frappuccino"
         width=""
         height=""
         loading="lazy"
@@ -50,7 +50,7 @@ export function renderSlider() {
     <div class="slide">
       <img
         src="${sliderImg2}"
-        alt=""
+        alt="caramel-macchiato"
         width=""
         height=""
         loading="lazy"
@@ -64,7 +64,7 @@ export function renderSlider() {
     <div class="slide">
       <img
         src="${sliderImg3}"
-        alt=""
+        alt="ice-coffee"
         width=""
         height=""
         loading="lazy"

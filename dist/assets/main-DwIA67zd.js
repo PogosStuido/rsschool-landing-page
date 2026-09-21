@@ -35,7 +35,7 @@ function renderSlider() {
     <div class="slide">
       <img
         src="${coffee_slider_1_default}"
-        alt=""
+        alt="S’mores Frappuccino"
         width=""
         height=""
         loading="lazy"
@@ -49,7 +49,7 @@ function renderSlider() {
     <div class="slide">
       <img
         src="${coffee_slider_2_default}"
-        alt=""
+        alt="caramel-macchiato"
         width=""
         height=""
         loading="lazy"
@@ -63,7 +63,7 @@ function renderSlider() {
     <div class="slide">
       <img
         src="${coffee_slider_3_default}"
-        alt=""
+        alt="ice-coffee"
         width=""
         height=""
         loading="lazy"
@@ -268,4 +268,4 @@ function boostrap() {
 document.addEventListener("DOMContentLoaded", boostrap);
 //#endregion
 
-//# sourceMappingURL=main-CyVSC7Wo.js.map
+//# sourceMappingURL=main-DwIA67zd.js.map
