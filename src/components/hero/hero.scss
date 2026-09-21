@@ -6,6 +6,7 @@
   padding-top: 20px;
 
   &__background-image {
+    padding: 60px 16px;
     width: 100%;
     min-height: 552px;
     border-radius: 40px;
@@ -18,7 +19,6 @@
   }
 
   &__wrapper {
-    padding: 60px 16px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -28,6 +28,7 @@
   &__header {
     @include heading-1;
     color: var(--text-inverse);
+    letter-spacing: 2px;
 
     &_accent {
       @include heading-1_accent;
@@ -47,9 +48,19 @@
 
 @media screen and (min-width: 768px) {
   .hero {
+    &__background-image {
+      padding: 100px 100px 100px 60px
+    }
     &__wrapper {
-      padding: 100px 0 100px 60px;
-      max-width: 580px;
+      max-width: 530px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    &__background-image {
+      padding: 100px;
     }
   }
 }
