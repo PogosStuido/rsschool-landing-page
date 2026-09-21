@@ -20,7 +20,7 @@ export function renderHero() {
             those seeking a warm and inviting space to enjoy their favorite
             beverage.
           </p>
-          <a href="/menu">
+          <a href="./menu">
           <button
             class="hero__button"
             type="button"

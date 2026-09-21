@@ -116,7 +116,7 @@ function renderHero() {
             those seeking a warm and inviting space to enjoy their favorite
             beverage.
           </p>
-          <a href="/menu">
+          <a href="./menu">
           <button
             class="hero__button"
             type="button"
@@ -268,4 +268,4 @@ function boostrap() {
 document.addEventListener("DOMContentLoaded", boostrap);
 //#endregion
 
-//# sourceMappingURL=main-DwIA67zd.js.map
+//# sourceMappingURL=main-GCe1aWgY.js.map
