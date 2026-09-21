@@ -1,7 +1,8 @@
-﻿function renderHeader() {
-  const headerHTML = `
-<header class="header">
-  <div class="container">
+﻿export function renderHeader() {
+  const headerHTML = document.createElement('header');
+  headerHTML.className = 'header';
+  headerHTML.innerHTML = `
+    <div class="container">
     <div class="header__wrapper">
       <div class="header__logo">
         <a href="./">
@@ -137,13 +138,7 @@
       </div>
     </div>
   </div>
-</header>
   `;
-
-  const headerContainer = document.getElementById('header-container');
-  if (headerContainer) {
-    headerContainer.outerHTML = headerHTML;
-  }
+  return headerHTML;
 }
 
-document.addEventListener('DOMContentLoaded', renderHeader);

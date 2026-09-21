@@ -1,6 +1,7 @@
-function renderFooter() {
-  const footerHTML = `
-  <footer class="footer">
+export function renderFooter() {
+  const footerHTML = document.createElement('footer');
+  footerHTML.className = 'footer';
+  footerHTML.innerHTML = `
   <div class="container">
     <div class="footer__wrapper">
       <div class="first-part">
@@ -100,12 +101,7 @@ function renderFooter() {
       </div>
     </div>
   </div>
-</footer>
   `
-  const footer = document.getElementById('footer-container');
-  if (footer) {
-    footer.outerHTML = footerHTML;
-  }
+  return footerHTML;
 }
 
-document.addEventListener('DOMContentLoaded', renderFooter)
