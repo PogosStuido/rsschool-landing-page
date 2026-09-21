@@ -4,6 +4,7 @@ import mobileAppImg from '../../assets/img/mobile-screens.png'
 export function renderMobileApp() {
   const mobileApp = document.createElement('section');
   mobileApp.className = 'mobile-app';
+  mobileApp.id = 'mobile-app'
   mobileApp.innerHTML = `
   <div class="container">
       <div class="mobile-app__wrapper">

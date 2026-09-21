@@ -3,6 +3,7 @@ import './footer.scss';
 export function renderFooter() {
   const footerHTML = document.createElement('footer');
   footerHTML.className = 'footer';
+  footerHTML.id = 'contacts';
   footerHTML.innerHTML = `
   <div class="container">
     <div class="footer__wrapper">

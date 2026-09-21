@@ -7,6 +7,7 @@ import aboutImg4 from '../../assets/img/about/about-4.jpg';
 export function renderAbout() {
   const about = document.createElement('section');
   about.className = 'about';
+  about.id = 'about';
 
   about.innerHTML = `
   <div class="container">

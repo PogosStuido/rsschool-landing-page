@@ -1,4 +1,4 @@
-import { n as renderHeader, t as renderFooter } from "./footer-9oPnXCxE.js";
+import { n as renderHeader, t as renderFooter } from "./footer-CaY5Mfym.js";
 //#region src/assets/img/coffee-slider/coffee-slider-1.png
 var coffee_slider_1_default = "" + new URL("coffee-slider-1-BQqdf2em.png", import.meta.url).href;
 //#endregion
@@ -17,6 +17,7 @@ var arrowIcon = `
 function renderSlider() {
 	const slider = document.createElement("section");
 	slider.className = "slider";
+	slider.id = "slider";
 	const container = document.createElement("div");
 	container.className = "container";
 	const titleH2 = document.createElement("h2");
@@ -144,6 +145,7 @@ var about_4_default = "" + new URL("about-4-CvsXWmsT.jpg", import.meta.url).href
 function renderAbout() {
 	const about = document.createElement("section");
 	about.className = "about";
+	about.id = "about";
 	about.innerHTML = `
   <div class="container">
       <h2 class="about__text">Resource is <span>the perfect and cozy
@@ -197,6 +199,7 @@ var mobile_screens_default = "" + new URL("mobile-screens-pevenitR.png", import.
 function renderMobileApp() {
 	const mobileApp = document.createElement("section");
 	mobileApp.className = "mobile-app";
+	mobileApp.id = "mobile-app";
 	mobileApp.innerHTML = `
   <div class="container">
       <div class="mobile-app__wrapper">
@@ -263,4 +266,4 @@ function boostrap() {
 document.addEventListener("DOMContentLoaded", boostrap);
 //#endregion
 
-//# sourceMappingURL=main-CxY6AXRf.js.map
+//# sourceMappingURL=main-DOVekbIx.js.map

@@ -12,6 +12,7 @@ const arrowIcon = `
 export function renderSlider() {
   const slider = document.createElement('section');
   slider.className = 'slider';
+  slider.id = 'slider';
 
   const container = document.createElement('div');
   container.className = 'container';

@@ -38,16 +38,16 @@ export function renderHeader() {
       <nav class="header__nav">
         <ul role="list">
           <li class="header__nav__elem">
-            <a href="">Favorite coffee</a>
+            <a href="./#slider">Favorite coffee</a>
           </li>
           <li class="header__nav__elem">
-            <a href="">About</a>
+            <a href="./#about">About</a>
           </li>
           <li class="header__nav__elem">
-            <a href="">Mobile app</a>
+            <a href="./#mobile-app">Mobile app</a>
           </li>
           <li class="header__nav__elem">
-            <a href="">Contact us</a>
+            <a href="#contacts">Contact us</a>
           </li>
         </ul>
       </nav>
