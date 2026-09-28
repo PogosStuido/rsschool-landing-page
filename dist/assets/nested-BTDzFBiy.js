@@ -1,4 +1,4 @@
-import { n as renderHeader, t as renderFooter } from "./footer-CaY5Mfym.js";
+import { n as renderHeader, r as renderBurger, t as renderFooter } from "./footer-jmNigjC1.js";
 //#region src/assets/img/coffee/coffee-1.jpg
 var coffee_1_default = "" + new URL("coffee-1-BYBVVpO2.jpg", import.meta.url).href;
 //#endregion
@@ -129,8 +129,9 @@ function boostrap() {
 	const footerElement = renderFooter();
 	mainElement.append(menuElement);
 	document.body.append(headerElement, mainElement, footerElement);
+	renderBurger();
 }
 document.addEventListener("DOMContentLoaded", boostrap);
 //#endregion
 
-//# sourceMappingURL=nested-sZ4qPrpi.js.map
+//# sourceMappingURL=nested-BTDzFBiy.js.map
