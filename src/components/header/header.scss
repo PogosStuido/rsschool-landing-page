@@ -18,7 +18,6 @@
     path.circle {
       fill: var(--text-accent);
     }
-
   }
 
   &__nav {
@@ -89,7 +88,40 @@
       }
     }
   }
+}
 
+
+@media screen and (min-width: 769px) {
+  .header {
+    &__nav {
+      display: block;
+      width: 100%;
+      max-width: 470px;
+
+      ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      &__elem {
+        @include menu-item;
+      }
+    }
+
+    .burger {
+      display: none;
+    }
+
+    &__menu {
+      @include menu-item;
+
+      &__wrapper {
+        display: flex;
+        gap: 8px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -108,13 +140,7 @@
       }
     }
 
-    .burger {
-      display: none;
-    }
-
     &__menu {
-      @include menu-item;
-
       &__wrapper {
         display: flex;
         gap: 8px;
