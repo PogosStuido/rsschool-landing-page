@@ -1,4 +1,5 @@
 ﻿import './header.scss'
+import {burgerUI} from "../../features/burger/burger.js";
 
 export function renderHeader() {
   const headerHTML = document.createElement('header');
@@ -141,6 +142,7 @@ export function renderHeader() {
     </div>
   </div>
   `;
+  headerHTML.append(burgerUI());
   return headerHTML;
 }
 

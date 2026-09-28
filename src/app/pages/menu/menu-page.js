@@ -6,6 +6,8 @@ import {renderHeader} from '/src/components/header/header.js'
 import {renderMenu} from '/src/components/menu/menu.js'
 import {renderFooter} from '/src/components/footer/footer.js'
 
+import {renderBurger} from '/src/features/burger/burger.js';
+
 function boostrap() {
 
   const headerElement = renderHeader();
@@ -20,6 +22,9 @@ function boostrap() {
   mainElement.append(menuElement);
 
   document.body.append(headerElement, mainElement, footerElement);
+
+  renderBurger()
+
 }
 
 document.addEventListener('DOMContentLoaded', boostrap);
